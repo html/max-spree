@@ -42,3 +42,4 @@ gem 'spree_skrill'
 
 # or if using bundler (as with Rails), add the following to your Gemfile
 gem "therubyracer", :require => 'v8'
+gem 'russian', '~> 0.6.0'
