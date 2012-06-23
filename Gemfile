@@ -36,3 +36,10 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
+gem 'spree'
+gem 'spree_usa_epay'
+gem 'spree_skrill'
+
+require 'v8'
+# or if using bundler (as with Rails), add the following to your Gemfile
+gem "therubyracer", :require => 'v8'
