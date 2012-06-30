@@ -11,3 +11,7 @@
  *= require_self
  *= require_tree .
 */
+
+span#order_total {
+  white-space: nowrap;
+}

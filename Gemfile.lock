@@ -70,6 +70,8 @@ GEM
       orm_adapter (~> 0.0.3)
       railties (~> 3.1)
       warden (~> 1.1.1)
+    devise-russian (2.0.1.1)
+      devise
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -240,6 +242,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  devise-russian
   jquery-rails
   rails (= 3.2.3)
   russian (~> 0.6.0)
