@@ -15,3 +15,12 @@
 span#order_total {
   white-space: nowrap;
 }
+
+nav#top-nav-bar {
+  width: 400px;
+}
+
+figure#logo {
+  padding-top: 10px;
+  width: 540px;
+}

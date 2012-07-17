@@ -9,5 +9,5 @@ Spree.config do |config|
   # Example:
   # Uncomment to override the default site name.
   # config.site_name = "Spree Demo Site"
-  config.logo = "/assets/logo.gif"
+  config.logo = "/assets/logo.png"
 end
