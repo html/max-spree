@@ -11,3 +11,5 @@ Spree.config do |config|
   # config.site_name = "Spree Demo Site"
   config.logo = "/assets/logo.png"
 end
+
+Spree::Auth::Config[:registration_step] = nil
