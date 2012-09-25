@@ -1,0 +1,23 @@
+<% content_for :head do %>
+  <%#= javascript_include_tag states_url %>
+<% end %>
+<div id="checkout" data-hook>  
+  <%= render :partial => 'spree/shared/error_messages', :locals => { :target => @order } %>
+  
+  <div class="row" data-hook="checkout_header">
+    <h1 data-hook="checkout_title"><%= t(:checkout) %></h1>
+  </div>
+  
+  <div class="row" data-hook="checkout_content">
+    <div class="columns <%= if false && @order.state != 'confirm' then 'alpha twelve' else 'alpha omega sixteen' end %>" data-hook="checkout_form_wrapper">
+      <%= form_for @order, :url => checkout_path(), :html => { :id => "checkout_form_#{@order.state}" } do |form| %>
+        <%= render 'address', :form => form %>
+        <%= render 'delivery', :form => form %>
+        <%= render 'payment', :form => form %>
+        <%= render 'confirm', :form => form %>
+        <%= submit_tag nil, :id => 'post-final', :style => 'display:none;' %>
+      <% end %>
+    </div>    
+  </div>
+
+</div>
